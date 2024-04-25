@@ -10,11 +10,20 @@ public class City extends Polygon{
         this.lengthOfWall = lengthOfWall;
     }
 
-
+    private boolean port;
     public final Point center;
     private String nameOfCity;
     double lengthOfWall;
 
+    public Point getCenter() {
+        return center;
+    }
 
+    public String getNameOfCity() {
+        return nameOfCity;
+    }
 
+    public double getLengthOfWall() {
+        return lengthOfWall;
+    }
 }

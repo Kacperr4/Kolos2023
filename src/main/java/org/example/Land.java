@@ -16,9 +16,11 @@ private List<City> cities = new ArrayList<>();
     }
     public void addCity(City city){
 
-        if( ){
+        if(super.inside(city.center)){
             cities.add(city);
-        }throw new RuntimeException();
+        }else {
+            throw new RuntimeException("Miasto: "+ city.getNameOfCity());
 
+        }
     }
 }
